@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Network Intrusion Detection System</title>
+         <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <style>
+      body{
+        overflow: hidden;
+      }
+     
+
+      .body-class{
+        background-image:url("/static/bg2.jpg");
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        height:100vh;
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+        overflow: hidden;
+      }
+      .btn{
+        background-color: rgba(255, 229, 79, 0.767);
+        color: rgb(14, 10, 10);
+        width:30rem;
+        height:10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 25px;
+        transition: all 0.5s;
+        border-radius: 15px;
+        font-family: 'Quicksand', sans-serif;
+
+      }
+
+
+      .btn-wrapper{
+        display: flex;
+        position: absolute;
+        top: 45%;
+        gap:3rem;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn:hover{
+        background-color: rgba(73, 63, 221, 0.637);
+        color: white;
+      }
+
+
+      nav{
+        z-index: 1;
+      }
+    </style>
+
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="NIDS" href="#">NIDS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/About">About <span class="sr-only">(current)</span></a>
+                </li>
+                
+            </div>
+          </nav>
+          <div class="body-class">
+
+            
+          </div>
+          
+                      <div class="btn-wrapper container-fluid">
+                        <div class=" my-3">
+                          <a href="/capture_packets" class="btn " tabindex="-1" role="button" aria-disabled="true">Capture Pcap file</a>
+                        </div>
+                        <div class="my-3">
+                          <a href="/pcap_kdd" class="btn" tabindex="-1" role="button" aria-disabled="true">Pcap To CSV</a>
+                        </div>
+                        <div class="my-3">
+                          <a href="/getcsv" class="btn" tabindex="-1" role="button" aria-disabled="true">Predict Using ML Model</a>
+                        </div>
+                      </div>
+          
+        
+        
+        
+        
+
+       
+    </body>
+</html>
