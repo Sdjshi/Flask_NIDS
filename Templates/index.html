@@ -30,7 +30,7 @@
       .btn{
         background-color: rgba(255, 229, 79, 0.767);
         color: rgb(14, 10, 10);
-        width:30rem;
+        width:25rem;
         height:10rem;
         display: flex;
         justify-content: center;
@@ -45,12 +45,13 @@
 
 
       .btn-wrapper{
-        display: flex;
-        position: absolute;
-        top: 45%;
-        gap:3rem;
+        display:flex;
         justify-content: center;
         align-items: center;
+        position: absolute; 
+        top: 45%;
+        left: 7%;
+        gap:3rem;
       }
       .btn:hover{
         background-color: rgba(73, 63, 221, 0.637);
@@ -82,26 +83,17 @@
           </nav>
           <div class="body-class">
 
-            
           </div>
-          
-                      <div class="btn-wrapper container-fluid">
-                        <div class=" my-3">
-                          <a href="/capture_packets" class="btn " tabindex="-1" role="button" aria-disabled="true">Capture Pcap file</a>
-                        </div>
-                        <div class="my-3">
-                          <a href="/pcap_kdd" class="btn" tabindex="-1" role="button" aria-disabled="true">Pcap To CSV</a>
-                        </div>
-                        <div class="my-3">
-                          <a href="/getcsv" class="btn" tabindex="-1" role="button" aria-disabled="true">Predict Using ML Model</a>
-                        </div>
-                      </div>
-          
-        
-        
-        
-        
-
-       
+            <div class="btn-wrapper">
+              <div class=" my-3">
+                <a href="/capture_packets" class="btn " tabindex="-1" role="button" aria-disabled="true">Capture Pcap file</a>
+              </div>
+              <div class="my-3">
+                <a href="/pcap_kdd" class="btn" tabindex="-1" role="button" aria-disabled="true">Pcap To CSV</a>
+              </div>
+              <div class="my-3">
+                <a href="/getcsv" class="btn" tabindex="-1" role="button" aria-disabled="true">Predict Using ML Model</a>
+              </div>
+            </div>
     </body>
 </html>
